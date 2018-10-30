@@ -1,9 +1,6 @@
 package Test;
 
-import chapter1.Evaluate;
-import chapter1.Fibonacci;
-import chapter1.Gcd;
-import chapter1.Search;
+import chapter1.*;
 import org.junit.Test;
 
 /**
@@ -33,5 +30,33 @@ public class Chapter1Test {
 	public void testEvaluate(){
 		String[] express = {"(", "1", "+", "(", "(", "2", "+", "3", ")", "*", "(", "4", "*", "5", ")", ")", ")"};
 		System.out.println(Evaluate.doubleStackEvaluate(express));
+	}
+
+	@Test
+	public void testMyStack(){
+		MyStack<Integer> myStack = new MyStack<>();
+		System.out.println("isEmpty:"+myStack.isEmpty()+",size:"+myStack.size());
+		for (int i=0;i<10;i++){
+			myStack.push(i);
+		}
+		System.out.println("isEmpty:"+myStack.isEmpty()+",size:"+myStack.size());
+		while (!myStack.isEmpty()){
+			System.out.println(myStack.pop());
+
+		}
+	}
+
+	@Test
+	public void testMyQueue(){
+		MyQueue<Integer> myQueue = new MyQueue<>();
+		System.out.println("isEmpty:"+myQueue.isEmpty()+",size:"+myQueue.size());
+		for (int i=0;i<10;i++){
+			myQueue.enqueue(i);
+		}
+		System.out.println("isEmpty:"+myQueue.isEmpty()+",size:"+myQueue.size());
+		while (!myQueue.isEmpty()){
+			System.out.println(myQueue.dequeue());
+
+		}
 	}
 }
