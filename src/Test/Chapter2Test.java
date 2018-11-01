@@ -60,4 +60,13 @@ public class Chapter2Test {
 			System.out.print(anArr + " ");
 		}
 	}
+
+	@Test
+	public void testHeapSort(){
+		int arr[] = {6,-3,0,2,1,7,-9,5};
+		HeapSort.heapSort(arr);
+		for (int anArr : arr) {
+			System.out.print(anArr + " ");
+		}
+	}
 }
