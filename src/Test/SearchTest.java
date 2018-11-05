@@ -1,12 +1,12 @@
 package Test;
 
-import chapter3.BiSearchTree;
+import search.BiSearchTree;
 import org.junit.Test;
 
 /**
  * @author lwyan on 2018-11-02 11:56
  */
-public class Chapter3Test {
+public class SearchTest {
 	@Test
 	public void testBiSearchTree(){
 		BiSearchTree<String,String> biSearchTree = new BiSearchTree<>();

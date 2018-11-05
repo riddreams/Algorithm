@@ -1,12 +1,12 @@
 package Test;
 
-import chapter1.*;
+import algorithm.*;
 import org.junit.Test;
 
 /**
  * @author lwyan on 2018-10-29 10:11
  */
-public class Chapter1Test {
+public class AlgorithmTest {
 	@Test
 	public void testGcd(){
 		System.out.println(Gcd.gcd(4,6));

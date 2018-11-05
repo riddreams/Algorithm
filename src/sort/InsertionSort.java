@@ -1,4 +1,4 @@
-package chapter2;
+package sort;
 
 /**
  * 插入排序

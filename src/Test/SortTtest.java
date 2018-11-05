@@ -1,12 +1,12 @@
 package Test;
 
-import chapter2.*;
+import sort.*;
 import org.junit.Test;
 
 /**
  * @author lwyan on 2018-10-31 9:49
  */
-public class Chapter2Test {
+public class SortTtest {
 	@Test
 	public void testSelectionSort(){
 		int arr[] = {6,-3,0,2,1,7,-9,5};
