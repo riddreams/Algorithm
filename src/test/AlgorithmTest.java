@@ -1,4 +1,4 @@
-package Test;
+package test;
 
 import algorithm.*;
 import org.junit.Test;

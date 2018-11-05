@@ -1,4 +1,4 @@
-package Test;
+package test;
 
 import search.BiSearchTree;
 import org.junit.Test;
